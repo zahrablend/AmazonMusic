@@ -15,7 +15,7 @@ namespace AmazonMusic
         public void Subscribe(MusicPublisher publisher) =>
             publisher.ReleaseEvent += OnRelease;
 
-        public void OnRelease(string releaseType, string name, List<string> release)
+        private void OnRelease(string releaseType, string name, List<string> release)
         {
             if (releaseType == "Single")
             {

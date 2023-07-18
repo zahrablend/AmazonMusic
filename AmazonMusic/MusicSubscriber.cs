@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AmazonMusic
 {
+    // Class who receives the notification => Subscriber
+    // Getting a notification when an action occurred =>
+    // Register with an event and handle it
     public class MusicSubscriber
     {
         public string? Message { get; private set; }
